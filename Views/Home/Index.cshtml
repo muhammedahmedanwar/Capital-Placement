@@ -1,0 +1,575 @@
+﻿<a class="nav-link text-dark" asp-area="" asp-controller="AppForm" asp-action="AppForm">save&continue</a>
+
+
+<div class="formbold-main-wrapper">
+
+    
+  <div class="formbold-form-wrapper">
+    <form action="Index" method="POST">
+      <div class="formbold-input-group">
+                <label for="Title" class="formbold-form-label"> Program Title *</label>
+        <input
+          type="text"
+                       name="Title"
+                       id="Title"
+                       placeholder="Summer Internship Program"
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label for="summary" class="formbold-form-label"> Summary for the program *</label>
+        <input type="text"
+                       name="Summary"
+                       id="Summary"
+                       placeholder="Please explain the program in less than 250 character. This helps the applicant  to get the
+glimpse of what is the offering "
+          class="formbold-form-input"
+        />
+      </div>
+
+      <div class="formbold-input-group">
+                <label for="Description" class="formbold-form-label"> Program Description *</label>
+                <textarea rows="6"
+                          name="Description"
+                          id="Description"
+                          placeholder="You can provide all information about the program here. Please make sure to set the expectation and keep it clear"
+                          class="formbold-form-input"></textarea>
+      </div>
+
+            <div class="formbold-input-group">
+                <label for="Skill" class="formbold-form-label"> Key Skills Required for this Program *</label>
+                <input type="text"
+                       name="Skill"
+                       id="Skill"
+                       placeholder="Search the skills"
+                       class="formbold-form-input" />
+            </div>
+
+            <div class="formbold-input-group">
+                <label for="Benefit" class="formbold-form-label"> Program Benefits *</label>
+                <textarea rows="6"
+                          name="Benefit"
+                          id="Benefit"
+                          placeholder="Please explain the benefits on this programs. Bullet points are always a good option"
+                          class="formbold-form-input"></textarea>
+            </div>
+
+            <div class="formbold-input-group">
+                <label for="Criteria" class="formbold-form-label"> Application Criteria *</label>
+                <textarea rows="6"
+                          name="Criteria"
+                          id="Criteria"
+                          placeholder="In this section, please explain what is it takes to get into this program also it is important to tell the application what are the interview process so that they can better prepare"
+                          class="formbold-form-input"></textarea>
+            </div>
+
+      
+      <br />
+            <h2>Additional Program Information</h2><hr />
+            <div class="formbold-main-wrapper">
+                <div class="formbold-form-wrapper">
+                    <form action="Index" method="POST">
+
+                        <div class="formbold-form-step-1 active">
+                            <div class="formbold-input-flex">
+                                <div>
+                                    <label for="Type" class="formbold-form-label"> Program type * </label>
+                                    <input type="text"
+                                           name="Type"
+                                           placeholder="Andrio"
+                                           id="Type"
+                                           class="formbold-form-input" />
+                                </div>
+
+                                <div>
+                                    <label for="PStart" class="formbold-form-label"> Program start </label>
+                                    <input type="date"
+                                           name="PStart"
+                                           id="PStart"
+                                           class="formbold-form-input" />
+                                </div>
+                                
+                            </div>
+
+                            <div class="formbold-input-flex">
+                                <div>
+                                    <label for="AppOpen" class="formbold-form-label"> Application open *  </label>
+                                    <input type="date"
+                                           name="AppOpen"
+                                           id="AppOpen"
+                                           class="formbold-form-input" />
+                                </div>
+                                <div>
+                                    <label for="AppClose" class="formbold-form-label"> Application close *  </label>
+                                    <input type="date"
+                                           name="AppClose"
+                                           id="AppClose"
+                                           class="formbold-form-input" />
+                                </div>
+                            </div>
+
+                            <div class="formbold-input-flex">
+                                <div>
+                                    <label for="Duration" class="formbold-form-label"> Duration </label>
+                                    <input type="text"
+                                           name="Duration"
+                                           id="Duration"
+                                           placeholder="6 months"
+                                           class="formbold-form-input" />
+                                </div>
+                                <div>
+                                    <label for="Location" class="formbold-form-label"> Program location*  </label>
+                                    <input type="text"
+                                           name="Location"
+                                           id="Location"
+                                           placeholder="London, UK"
+                                           class="formbold-form-input" />
+                                    <input type="radio" />Fully Remote
+                                    
+
+                                </div>
+                            </div>
+
+                            <div class="formbold-input-flex">
+                                <div>
+                                    <label for="MinQuali" class="formbold-form-label"> Min qualifications </label>
+                                    <input type="text"
+                                           name="MinQuali"
+                                           id="MinQuali"
+                                           placeholder="High School"
+                                           class="formbold-form-input" />
+                                </div>
+                                <div>
+                                    <label for="MaxNumber" class="formbold-form-label"> Max number of application  </label>
+                                    <input type="text"
+                                           name="MaxNumber"
+                                           id="MaxNumber"
+                                           placeholder="20,000"
+                                           class="formbold-form-input" />
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+    </form>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+  }
+
+  .formbold-form-img {
+    margin-bottom: 45px;
+  }
+
+  .formbold-input-group {
+    margin-bottom: 18px;
+  }
+
+  .formbold-form-select {
+    width: 100%;
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+  }
+
+  .formbold-input-radio-wrapper {
+    margin-bottom: 25px;
+  }
+  .formbold-radio-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074d;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
+    border-radius: 50%;
+  }
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark {
+    background-color: #6a64f1;
+  }
+  .formbold-radio-checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark:after {
+    display: block;
+  }
+
+  .formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder {
+    color: #536387;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #07074d;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Inter", sans-serif;
+    }
+
+    .formbold-main-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px;
+    }
+
+    .formbold-form-wrapper {
+        margin: 0 auto;
+        max-width: 550px;
+        width: 100%;
+        background: white;
+    }
+
+    .formbold-steps {
+        padding-bottom: 18px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #DDE3EC;
+    }
+
+        .formbold-steps ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        .formbold-steps li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #536387;
+        }
+
+            .formbold-steps li span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #DDE3EC;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #536387;
+            }
+
+            .formbold-steps li.active {
+                color: #07074D;
+                ;
+            }
+
+                .formbold-steps li.active span {
+                    background: #6A64F1;
+                    color: #FFFFFF;
+                }
+
+    .formbold-input-flex {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 22px;
+    }
+
+        .formbold-input-flex > div {
+            width: 50%;
+        }
+
+    .formbold-form-input {
+        width: 100%;
+        padding: 13px 22px;
+        border-radius: 5px;
+        border: 1px solid #DDE3EC;
+        background: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        color: #536387;
+        outline: none;
+        resize: none;
+    }
+
+        .formbold-form-input:focus {
+            border-color: #6a64f1;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+    .formbold-form-label {
+        color: #07074D;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .formbold-form-confirm {
+        border-bottom: 1px solid #DDE3EC;
+        padding-bottom: 35px;
+    }
+
+        .formbold-form-confirm p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #536387;
+            margin-bottom: 22px;
+            width: 75%;
+        }
+
+        .formbold-form-confirm > div {
+            display: flex;
+            gap: 15px;
+        }
+
+    .formbold-confirm-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: #FFFFFF;
+        border: 0.5px solid #DDE3EC;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #536387;
+        cursor: pointer;
+        padding: 10px 20px;
+        transition: all .3s ease-in-out;
+    }
+
+    .formbold-confirm-btn {
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    }
+
+        .formbold-confirm-btn.active {
+            background: #6A64F1;
+            color: #FFFFFF;
+        }
+
+    .formbold-form-step-1,
+    .formbold-form-step-2,
+    .formbold-form-step-3 {
+        display: none;
+    }
+
+        .formbold-form-step-1.active,
+        .formbold-form-step-2.active,
+        .formbold-form-step-3.active {
+            display: block;
+        }
+
+    .formbold-form-btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .formbold-back-btn {
+        cursor: pointer;
+        background: #FFFFFF;
+        border: none;
+        color: #07074D;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: none;
+    }
+
+        .formbold-back-btn.active {
+            display: block;
+        }
+
+    .formbold-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px 25px;
+        border: none;
+        font-weight: 500;
+        background-color: #6A64F1;
+        color: white;
+        cursor: pointer;
+    }
+
+        .formbold-btn:hover {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+</style>
+
+<script>
+    const stepMenuOne = document.querySelector('.formbold-step-menu1')
+    const stepMenuTwo = document.querySelector('.formbold-step-menu2')
+    const stepMenuThree = document.querySelector('.formbold-step-menu3')
+
+    const stepOne = document.querySelector('.formbold-form-step-1')
+    const stepTwo = document.querySelector('.formbold-form-step-2')
+    const stepThree = document.querySelector('.formbold-form-step-3')
+
+    const formSubmitBtn = document.querySelector('.formbold-btn')
+    const formBackBtn = document.querySelector('.formbold-back-btn')
+
+    formSubmitBtn.addEventListener("click", function (event) {
+        event.preventDefault()
+        if (stepMenuOne.className == 'formbold-step-menu1 active') {
+            event.preventDefault()
+
+            stepMenuOne.classList.remove('active')
+            stepMenuTwo.classList.add('active')
+
+            stepOne.classList.remove('active')
+            stepTwo.classList.add('active')
+
+            formBackBtn.classList.add('active')
+            formBackBtn.addEventListener("click", function (event) {
+                event.preventDefault()
+
+                stepMenuOne.classList.add('active')
+                stepMenuTwo.classList.remove('active')
+
+                stepOne.classList.add('active')
+                stepTwo.classList.remove('active')
+
+                formBackBtn.classList.remove('active')
+
+            })
+
+        } else if (stepMenuTwo.className == 'formbold-step-menu2 active') {
+            event.preventDefault()
+
+            stepMenuTwo.classList.remove('active')
+            stepMenuThree.classList.add('active')
+
+            stepTwo.classList.remove('active')
+            stepThree.classList.add('active')
+
+            formBackBtn.classList.remove('active')
+            formSubmitBtn.textContent = 'Submit'
+        } else if (stepMenuThree.className == 'formbold-step-menu3 active') {
+            document.querySelector('form').submit()
+        }
+    })
+
+
+
+</script>
